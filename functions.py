@@ -6,11 +6,14 @@ app.geometry("500x400")
 
 def getUserDate():
  
-    new=CTkToplevel(app)
-    textbox=CTkEntry(master=new,placeholder_text="Input date in the form of xx/xxx/xxxx to xx/xxx/xxxx")
+    dateWindow=CTkToplevel(app)
+    dateWindow.title("This is the window to retrieve the date")
+    textbox=CTkEntry(master=dateWindow,placeholder_text="Input date in the form of xx/xxx/xxxx to xx/xxx/xxxx")
     textbox.pack(anchor="center",expand=True,pady=100)
     #Double check the way the date is actually stored
-    print("hihihih")
+    submitDate = CTkButton(master=dateWindow,text="submit")
+    submitDate.pack(anchor="n",expand=True)
+    #make the window nicer by changin colours, centering stuff better and just improve the overall appearance 
     
 
 checkbox = CTkCheckBox(master=app,text="Choose which unit(s)")
