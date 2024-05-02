@@ -1,2 +1,1 @@
 # PythonLibrary
-pay no attention to the  functions.py file in the github repository, that was supposed to be where the functions were located but I had built a decent amount of code for the customtkinter in it so I decided to change its name and make a new functions file as to not confuse anyone.
