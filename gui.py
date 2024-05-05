@@ -22,6 +22,13 @@ def getUserPollutant():
     PollutantWindow.title("This is the window to retrieve the Pollutant")
     gasCheckBox=CTkCheckBox(master=PollutantWindow,text="Gas")
     PMCheckBox=CTkCheckBox(master=PollutantWindow,text="PM")
+    gasCheckBox.pack(anchor="n")
+    PMCheckBox.pack(anchor="n")
+    PollutantSubmit = CTkButton(master=PollutantWindow,text="submit")
+    PollutantSubmit.pack(anchor="n")
+    return
+#not done with this function
+
 
 checkbox = CTkCheckBox(master=app,text="Choose which unit(s)")
 
