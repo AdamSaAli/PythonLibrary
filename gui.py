@@ -11,10 +11,17 @@ def getUserDate():
     textbox=CTkEntry(master=dateWindow,placeholder_text="Input date in the form of xx/xxx/xxxx to xx/xxx/xxxx")
     textbox.pack(anchor="center",expand=True,pady=100)
     #Double check the way the date is actually stored
-    submitDate = CTkButton(master=dateWindow,text="submit")
+    submitDate = CTkButton(master=dateWindow,text="submit",command=getUserPollutant)
     submitDate.pack(anchor="n",expand=True)
     #make the window nicer by changin colours, centering stuff better and just improve the overall appearance 
-    
+    return
+# not done with this function
+
+def getUserPollutant():
+    PollutantWindow=CTkToplevel(app)
+    PollutantWindow.title("This is the window to retrieve the Pollutant")
+    gasCheckBox=CTkCheckBox(master=PollutantWindow,text="Gas")
+    PMCheckBox=CTkCheckBox(master=PollutantWindow,text="PM")
 
 checkbox = CTkCheckBox(master=app,text="Choose which unit(s)")
 
